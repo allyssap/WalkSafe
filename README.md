@@ -1,3 +1,3 @@
 # WalkSafe
 
-Walk safe is a new application for Windsorite pedestrians that prioritises walker safety by routing around potential and active hazards using real-time data that will transform the mobile mapping apps. Live user feedback, police reports, and open data sets ensure real-time safety measures in place to protect pedestrians. The live map dashboard creates an at a glance city view of hazards. Officials can update, view and remove hazards using the dashboard.
+Live user feedback, police reports, and open data sets ensure real-time safety measures in place to protect pedestrians. The live map dashboard creates an at a glance city view of hazards. Officials can update, view and remove hazards using the dashboard.
