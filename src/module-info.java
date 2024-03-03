@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author allyssapoulin
+ *
+ */
+module WalkSafe {
+}
