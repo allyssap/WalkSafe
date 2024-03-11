@@ -2,6 +2,7 @@ package app;
 
 /**
  * The marker subclass for the user marker. Shows the user their position and orientation relative to what is around them.
+ * @author Robin Resendes
  */
 public class UserMarker extends Marker{
     private double orientation;
