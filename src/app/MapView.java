@@ -1,10 +1,8 @@
 package app;
 
 import java.util.LinkedList;
-import java.util.Map;
-
 /**
- * powers the view that the user will be seeing inside of the actual application
+ * Powers the view that the user will be seeing inside of the actual application
  * 
  * @author Robin Resendes
  */
@@ -16,30 +14,58 @@ public class MapView implements Runnable{
 
     private LinkedList<Hazard> hazards;
 
+    /**
+     * Returns the longitude.
+     * @return the longitude
+     */
     public double getLongitude() {
         return longitude;
     }
 
+    /**
+     * Sets the longitude.
+     * @param longitude
+     */
     public void setLongitude(long longitude) {
         this.longitude = longitude;
     }
 
+    /**
+     * Returns the latitude.
+     * @return the latitude
+     */
     public double getLatitude() {
         return latitude;
     }
 
+    /**
+     * Sets the latitude.
+     * @param latitude
+     */
     public void setLatitude(long latitude) {
         this.latitude = latitude;
     }
 
+    /**
+     * Returns the zoom level.
+     * @return the zoom level
+     */
     public double getZoomLevel() {
         return zoomLevel;
     }
 
+    /**
+     * Sets the zoom level.
+     * @param zoomLevel the zoom level
+     */
     public void setZoomLevel(double zoomLevel) {
         this.zoomLevel = zoomLevel;
     }
 
+    /**
+     * Constructs the MapView class.
+     * @param hazards
+     */
     public MapView(LinkedList<Hazard> hazards){
         this.longitude = 42.3149;
         this.latitude = 83.0364;
