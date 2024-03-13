@@ -38,6 +38,6 @@ class CompanyUser extends Users {
 
     // Method specific to CompanyUser
     public void performCompanyUserTask() {
-        // Implementation code for company user task
+        // Implementation code for company user task (next iter)
     }
 }
