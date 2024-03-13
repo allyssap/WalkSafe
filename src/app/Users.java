@@ -6,8 +6,6 @@ package app;
   * 
   */
 
-import java.util.Date;
-
 // Users class representing common attributes and methods for all users
 class Users {
     private String userId;
