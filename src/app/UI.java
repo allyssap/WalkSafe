@@ -19,5 +19,9 @@ public abstract class UI {
   public void setVisible(boolean visible) {
     this.isVisible = visible;
   }
+
+  public boolean getVisible(){
+    return this.isVisible;
+  }
   
 }
