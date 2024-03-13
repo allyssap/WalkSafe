@@ -1,3 +1,5 @@
+package app;
+
 public abstract class UI {
   
   protected boolean isVisible;
