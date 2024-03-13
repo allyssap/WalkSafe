@@ -75,11 +75,55 @@ public class OfficialHazardList implements HazardTemplate{
 		public String toString()
 		{
 			String s="";
-			for (Hazard r : hazardList)	
-			    s+=r+"\n";				
-
+			for (Hazard h : hazardList)	
+			    s+=h+"\n";				
 
 			return s;
 		}
+		/***
+		 * change the severity of the hazard at the specified index
+		 * @return true if the hazard was found and the severity was changed
+		 */
+		public boolean changeHazardSeverity(int index, int severity) {
+			Hazard hazard = hazardList.get(index);
+			
+			if(hazard != null) {
+				hazard.severity = severity;
+				return true;
+				
+			}
+			return false;
+		}
+		/***
+		 * add a hazard to the list
+		 * @param hazard, the hazard to be added
+		 * @return true if the hazard was added to the list, false otherwise
+		 */
+		public boolean addHazard(Hazard hazard) {
+			return hazardList.add(hazard);
+		}
+		/***
+		 * remove hazard from the list
+		 * @param hazard, the hazard to be removed
+		 * @return true if the hazard was removed from the list, false otherwise
+		 */
+		public boolean removeHazard(Hazard hazard) {
+			return hazardList.remove(hazard);
+			
+		}
+		/***
+		 * find the hazard in the list
+		 * @param hazard, the hazard being searched for
+		 * @return true if the hazard was found, false otherwise
+		 */
+		public boolean findHazard(Hazard hazard) {
+			for (Hazard h : hazardList) {
+			    if(h == hazard) {
+			    	return true;
+			    }
+			}
+			return false;
+		}
+
 
 }
