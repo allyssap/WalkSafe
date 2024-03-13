@@ -1,3 +1,11 @@
+package app;
+
+/**
+  *
+  * @author drewse / Andrew Scott
+  * 
+  */
+
 import java.util.Date;
 
 // Users class representing common attributes and methods for all users
