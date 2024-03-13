@@ -1,3 +1,5 @@
+package app;
+
 public abstract class UI {
   
   protected boolean isVisible;
@@ -16,6 +18,10 @@ public abstract class UI {
 
   public void setVisible(boolean visible) {
     this.isVisible = visible;
+  }
+
+  public boolean getVisible(){
+    return this.isVisible;
   }
   
 }
