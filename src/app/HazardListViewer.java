@@ -9,12 +9,23 @@ package app;
 
 public class HazardListViewer {
 
-	public OfficialHazardList hazards;
+	public static OfficialHazardList hazards;
 
 	public HazardListViewer()
 	{
-		hazards = new OfficialHazardList();
-		hazards.loadHazards();
+		view();
+	}
+	
+	private static void view() {
+		if(hazards.size() == 0) {
+			hazards = new OfficialHazardList();
+			hazards.loadHazards();
+		}
+		else {
+			///reload the hazards in the existing list
+			hazards.loadHazards();
+		}
+		
 		//System.out.print(hazards.toString());
 	}
 
