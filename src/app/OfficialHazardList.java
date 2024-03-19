@@ -1,6 +1,11 @@
 package app;
 
 import java.util.ArrayList;
+
+import hazards.Hazard;
+import hazards.HazardTemplate;
+import hazards.Official_Hazard;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -84,16 +89,16 @@ public class OfficialHazardList implements HazardTemplate{
 		 * change the severity of the hazard at the specified index
 		 * @return true if the hazard was found and the severity was changed
 		 */
-		public boolean changeHazardSeverity(int index, int severity) {
-			Hazard hazard = hazardList.get(index);
-			
-			if(hazard != null) {
-				hazard.severity = severity;
-				return true;
-				
-			}
-			return false;
-		}
+//		public boolean changeHazardSeverity(int index, int severity) {
+//			Hazard hazard = hazardList.get(index);
+//			
+//			if(hazard != null) {
+//				hazard.setSeverity(severity);
+//				return true;
+//				
+//			}
+//			return false;
+//		}
 		/***
 		 * add a hazard to the list
 		 * @param hazard, the hazard to be added
@@ -123,6 +128,12 @@ public class OfficialHazardList implements HazardTemplate{
 			    }
 			}
 			return false;
+		}
+		
+		public void show() {
+			for (Hazard h : hazardList) {
+			    System.out.println(h.toString());
+			}
 		}
 
 

@@ -1,4 +1,7 @@
-package app;
+package viewers;
+
+import app.OfficialHazardList;
+
 /***
  * 
  * @author allyssapoulin
@@ -6,26 +9,19 @@ package app;
  * Will be used in UI classes
  */
 
-
 public class HazardListViewer {
 
-	public static OfficialHazardList hazards;
+	public static OfficialHazardList officialHazards;
 
 	public HazardListViewer()
 	{
 		view();
 	}
 	
-	private static void view() {
-		if(hazards.size() == 0) {
-			hazards = new OfficialHazardList();
-			hazards.loadHazards();
-		}
-		else {
-			///reload the hazards in the existing list
-			hazards.loadHazards();
-		}
-		
+	public static void view() {
+		officialHazards = new OfficialHazardList();
+		officialHazards.loadHazards();
+	
 		//System.out.print(hazards.toString());
 	}
 

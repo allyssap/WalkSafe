@@ -1,5 +1,7 @@
 package app;
 
+import hazards.Hazard;
+
 /**
   *
   * @author drewse / Andrew Scott

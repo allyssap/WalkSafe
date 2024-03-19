@@ -1,6 +1,8 @@
-package app;
+package viewers;
 
 import java.util.LinkedList;
+
+import hazards.Hazard;
 /**
  * Powers the view that the user will be seeing inside of the actual application
  * 

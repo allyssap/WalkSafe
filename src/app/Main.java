@@ -2,13 +2,19 @@ package app;
 
 public class Main {
 
-	public Main() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		new Main();
+		boolean err = true;
+		WalkSafeApplication app;
+		// System.out.println(args.length);
+
+		if (args.length==1)
+		{
+			if (args[0].compareToIgnoreCase("console")==0)
+			{
+				app = new WalkSafeApplication("console");
+				err=false;
+			}
+		}
 	}
 
 }

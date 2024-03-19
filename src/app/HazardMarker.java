@@ -1,6 +1,8 @@
 package app;
 import java.awt.*;
 
+import hazards.Hazard;
+
 /**
  * The marker subclass for hazard markers. Tells the user where the hazards are on the map in a red colour. 
  * 
