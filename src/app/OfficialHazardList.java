@@ -23,7 +23,7 @@ public class OfficialHazardList implements HazardTemplate{
 		public ArrayList<Hazard> hazardList;
 
 		/** default constructor */
-		public OfficialHazardList()
+		private OfficialHazardList()
 		{
 			hazardList = new ArrayList<>();
 		}
